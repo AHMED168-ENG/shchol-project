@@ -1,0 +1,346 @@
+/* start owel Carosal */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: "";
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slick-prev,
+.slick-next,
+.pharmacy-home-slider .swiper-button-prev,
+.pharmacy-home-slider .swiper-button-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100px;
+    height: 100%;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    z-index: 9999;
+    background: none !important;
+
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus,
+.pharmacy-home-slider .swiper-button-prev:hover,
+.pharmacy-home-slider .swiper-button-next:hover {
+    opacity: 1;
+    outline: none;
+    border:0 !important
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before,
+.pharmacy-home-slider .swiper-button-prev:hover:before,
+.pharmacy-home-slider .swiper-button-next:hover:before {
+    opacity: 1;
+    color:#333
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+    color: #383838;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+
+.pharmacy-home-slider .swiper-button-prev:after,
+.pharmacy-home-slider .swiper-button-next:after {
+    display: none;
+}
+
+.pharmacy-home-slider .swiper-button-prev:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+    color: #383838;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.pharmacy-home-slider .swiper-button-next:before {
+    content: "";
+    color: #383838;
+    font-size: 20px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    height: 40px;
+}
+
+[dir="rtl"] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+.slick-prev:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+}
+
+[dir="rtl"] .slick-prev:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+}
+
+.slick-next {
+    right: 0;
+}
+
+[dir="rtl"] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+.slick-next:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+}
+
+[dir="rtl"] .slick-next:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li,
+.pharmacy-home-slider .swiper-pagination-bullet {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 5px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: #c0c0c0;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+.slick-dots li button:before {
+    display: none;
+    font-family: "slick";
+    font-size: 76px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "-";
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #0de0fe;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #0de0fe;
+}
+
+.slick-slide {
+    outline: none !important;
+}
+
+.specialities-slider .slick-slide {
+    display: block;
+    padding: 0 12px;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.specialities-slider .slick-dots {
+    margin-top: 44px;
+    position: unset;
+}
+
+.features-slider .slick-slide {
+    margin-right: 62px;
+}
+
+.features-slider .slick-center {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.features-slider .slick-list {
+    padding: 16px 50px !important;
+}
+
+.features-slider .slick-dots {
+    margin-top: 44px;
+    position: unset;
+}
+
+/* end owel Carosal */
